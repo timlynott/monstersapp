@@ -2,9 +2,7 @@ import React from "react";
 
 import "./card.styles.css";
 
-const Card = (monster) => {
-
-    const { id, name, email } = monster;
+const Card = ({monster: { id, name, email }}) => {
     return (
       <div className="card-container" key={id}>
         <img
