@@ -2,9 +2,9 @@ import React from "react";
 
 import "./card.styles.css";
 
-class Card extends React.Component {
-  render() {
-    const { id, name, email } = this.props.monster;
+const Card = (monster) => {
+
+    const { id, name, email } = monster;
     return (
       <div className="card-container" key={id}>
         <img
@@ -16,7 +16,7 @@ class Card extends React.Component {
       </div>
     );
   }
-}
+
 
 
 export default Card;    
